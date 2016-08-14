@@ -14,6 +14,12 @@
 		AF04D9431D601FA5004E404D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF04D9411D601FA5004E404D /* LaunchScreen.storyboard */; };
 		AF04D94E1D601FA5004E404D /* DemoRPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF04D94D1D601FA5004E404D /* DemoRPGTests.swift */; };
 		AF04D9591D601FA5004E404D /* DemoRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF04D9581D601FA5004E404D /* DemoRPGUITests.swift */; };
+		AF1D257C1D6021E600BB93DC /* KZFileWatchers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25761D60218A00BB93DC /* KZFileWatchers.framework */; };
+		AF1D257D1D6021E600BB93DC /* KZFileWatchers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25761D60218A00BB93DC /* KZFileWatchers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF1D257E1D6021E600BB93DC /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25771D60218A00BB93DC /* Marshal.framework */; };
+		AF1D257F1D6021E600BB93DC /* Marshal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25771D60218A00BB93DC /* Marshal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF1D25801D6021E600BB93DC /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25781D60218A00BB93DC /* ReSwift.framework */; };
+		AF1D25811D6021E600BB93DC /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25781D60218A00BB93DC /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AF1D25821D6021E600BB93DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF1D25811D6021E600BB93DC /* ReSwift.framework in Embed Frameworks */,
+				AF1D257D1D6021E600BB93DC /* KZFileWatchers.framework in Embed Frameworks */,
+				AF1D257F1D6021E600BB93DC /* Marshal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AF04D9351D601FA5004E404D /* DemoRPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF04D9381D601FA5004E404D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +69,9 @@
 		AF04D9541D601FA5004E404D /* DemoRPGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoRPGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF04D9581D601FA5004E404D /* DemoRPGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRPGUITests.swift; sourceTree = "<group>"; };
 		AF04D95A1D601FA5004E404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1D25761D60218A00BB93DC /* KZFileWatchers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KZFileWatchers.framework; path = Carthage/Build/iOS/KZFileWatchers.framework; sourceTree = "<group>"; };
+		AF1D25771D60218A00BB93DC /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/iOS/Marshal.framework; sourceTree = "<group>"; };
+		AF1D25781D60218A00BB93DC /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1D257C1D6021E600BB93DC /* KZFileWatchers.framework in Frameworks */,
+				AF1D25801D6021E600BB93DC /* ReSwift.framework in Frameworks */,
+				AF1D257E1D6021E600BB93DC /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +105,9 @@
 		AF04D92C1D601FA5004E404D = {
 			isa = PBXGroup;
 			children = (
+				AF1D25761D60218A00BB93DC /* KZFileWatchers.framework */,
+				AF1D25771D60218A00BB93DC /* Marshal.framework */,
+				AF1D25781D60218A00BB93DC /* ReSwift.framework */,
 				AF04D9371D601FA5004E404D /* DemoRPG */,
 				AF04D94C1D601FA5004E404D /* DemoRPGTests */,
 				AF04D9571D601FA5004E404D /* DemoRPGUITests */,
@@ -135,6 +166,7 @@
 				AF04D9311D601FA5004E404D /* Sources */,
 				AF04D9321D601FA5004E404D /* Frameworks */,
 				AF04D9331D601FA5004E404D /* Resources */,
+				AF1D25821D6021E600BB93DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,6 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DemoRPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.jasonlarsen.DemoRPG;
@@ -410,6 +446,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DemoRPG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.jasonlarsen.DemoRPG;
@@ -482,6 +522,7 @@
 				AF04D95F1D601FA5004E404D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF04D9601D601FA5004E404D /* Build configuration list for PBXNativeTarget "DemoRPGTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +531,7 @@
 				AF04D9621D601FA5004E404D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF04D9631D601FA5004E404D /* Build configuration list for PBXNativeTarget "DemoRPGUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +540,7 @@
 				AF04D9651D601FA5004E404D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
