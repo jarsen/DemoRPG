@@ -20,7 +20,6 @@ class DesktopDaemon: StoreSubscriber {
         stateJSONPath = path
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             fileWatcher = FileWatcher.Local(path: stateJSONPath)
-            App.store.subscribe(self)
             
             try! fileWatcher.start({ result in
                 switch result {
@@ -37,6 +36,8 @@ class DesktopDaemon: StoreSubscriber {
                     }
                 }
             })
+            
+            App.store.subscribe(self)
             
         #endif
     }
