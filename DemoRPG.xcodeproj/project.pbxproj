@@ -20,6 +20,14 @@
 		AF1D257F1D6021E600BB93DC /* Marshal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25771D60218A00BB93DC /* Marshal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF1D25801D6021E600BB93DC /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25781D60218A00BB93DC /* ReSwift.framework */; };
 		AF1D25811D6021E600BB93DC /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1D25781D60218A00BB93DC /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF1D25861D6022AD00BB93DC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D25851D6022AD00BB93DC /* State.swift */; };
+		AF1D25881D6022D100BB93DC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D25871D6022D100BB93DC /* Player.swift */; };
+		AF1D258A1D60237700BB93DC /* PlayerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D25891D60237700BB93DC /* PlayerListViewController.swift */; };
+		AF5EDBBE1D60B7B600DFC4B7 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EDBBD1D60B7B600DFC4B7 /* Action.swift */; };
+		AF5EDBC01D60B80200DFC4B7 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5EDBBF1D60B80200DFC4B7 /* Reducer.swift */; };
+		AF75AC2F1D60BB0A008FA2B9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75AC2E1D60BB0A008FA2B9 /* App.swift */; };
+		AF75AC311D60BB4F008FA2B9 /* DesktopDaemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75AC301D60BB4F008FA2B9 /* DesktopDaemon.swift */; };
+		AF75AC331D60BC5D008FA2B9 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75AC321D60BC5D008FA2B9 /* PlayerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +80,14 @@
 		AF1D25761D60218A00BB93DC /* KZFileWatchers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KZFileWatchers.framework; path = Carthage/Build/iOS/KZFileWatchers.framework; sourceTree = "<group>"; };
 		AF1D25771D60218A00BB93DC /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/iOS/Marshal.framework; sourceTree = "<group>"; };
 		AF1D25781D60218A00BB93DC /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		AF1D25851D6022AD00BB93DC /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		AF1D25871D6022D100BB93DC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AF1D25891D60237700BB93DC /* PlayerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListViewController.swift; sourceTree = "<group>"; };
+		AF5EDBBD1D60B7B600DFC4B7 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AF5EDBBF1D60B80200DFC4B7 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		AF75AC2E1D60BB0A008FA2B9 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		AF75AC301D60BB4F008FA2B9 /* DesktopDaemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesktopDaemon.swift; sourceTree = "<group>"; };
+		AF75AC321D60BC5D008FA2B9 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,14 @@
 				AF04D93F1D601FA5004E404D /* Assets.xcassets */,
 				AF04D9411D601FA5004E404D /* LaunchScreen.storyboard */,
 				AF04D9441D601FA5004E404D /* Info.plist */,
+				AF1D25851D6022AD00BB93DC /* State.swift */,
+				AF1D25891D60237700BB93DC /* PlayerListViewController.swift */,
+				AF75AC2E1D60BB0A008FA2B9 /* App.swift */,
+				AF75AC301D60BB4F008FA2B9 /* DesktopDaemon.swift */,
+				AF75AC321D60BC5D008FA2B9 /* PlayerDetailViewController.swift */,
+				AF5EDBBD1D60B7B600DFC4B7 /* Action.swift */,
+				AF5EDBBF1D60B80200DFC4B7 /* Reducer.swift */,
+				AF1D25871D6022D100BB93DC /* Player.swift */,
 			);
 			path = DemoRPG;
 			sourceTree = "<group>";
@@ -288,8 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF75AC2F1D60BB0A008FA2B9 /* App.swift in Sources */,
 				AF04D93B1D601FA5004E404D /* ViewController.swift in Sources */,
+				AF75AC311D60BB4F008FA2B9 /* DesktopDaemon.swift in Sources */,
+				AF1D258A1D60237700BB93DC /* PlayerListViewController.swift in Sources */,
+				AF5EDBC01D60B80200DFC4B7 /* Reducer.swift in Sources */,
 				AF04D9391D601FA5004E404D /* AppDelegate.swift in Sources */,
+				AF5EDBBE1D60B7B600DFC4B7 /* Action.swift in Sources */,
+				AF1D25881D6022D100BB93DC /* Player.swift in Sources */,
+				AF75AC331D60BC5D008FA2B9 /* PlayerDetailViewController.swift in Sources */,
+				AF1D25861D6022AD00BB93DC /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

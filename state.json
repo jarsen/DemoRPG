@@ -1,0 +1,27 @@
+{
+  "players" : [
+    {
+      "level" : 12,
+      "class" : "Wizard",
+      "name" : "Gadlock"
+    },
+    {
+      "level" : 15,
+      "class" : "Paladin",
+      "name" : "Augustine Firefox"
+    },
+    {
+      "level" : 3,
+      "class" : "Barbarian",
+      "name" : "Kongrad"
+    },
+    {
+      "level" : 5,
+      "class" : "Ranger",
+      "name" : "Aurora"
+    }
+  ],
+  "detailState" : {
+    "selectedIndex" : 1
+  }
+}
