@@ -38,7 +38,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" action="showDetailViewController:sender:" id="kNJ-rZ-1tY"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="11b-ec-IAI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
